@@ -46,17 +46,14 @@ const configuration: any = {
 	drawFileList: false,
 	matching: 'lines',
 	outputFormat: 'side-by-side',
-	fileListToggle: false,
-	fileListStartVisible: false,
-	fileContentToggle: false,
 	highlight: true,
-	renderNothingWhenEmpty: false,
+	renderNothingWhenEmpty: true,
 	// diffStyle:'line'
 };
 
 let contentBoxWidth = ref(window.innerWidth / 2 - 40)
-let leftContent = ref("123456\n234")
-let rightContent = ref("12345678\n234566")
+let leftContent = ref("123456\n234\n234\n234\n234\n234\n234\n234")
+let rightContent = ref("12345678\n234566\n234\n234\n234\n234\n234")
 
 const leftFileList: File[] = [];
 const rightFileList: File[] = [];
@@ -119,6 +116,7 @@ const draw = () => {
 	const diff2htmlUi = new Diff2HtmlUI(displayBox.value, differences, configuration);
 	diff2htmlUi.draw()
 	diff2htmlUi.highlightCode();
+	diff2htmlUi.fileListToggle(false);
 }
 
 const handleContentChange4Left = (event: any) => {

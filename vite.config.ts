@@ -28,7 +28,7 @@ export default defineConfig({
     // 打包配置
     build: {
         target: 'modules',
-        outDir: '../src/main/resources/static', //指定输出路径
-        assetsDir: 'assets', // 指定生成静态资源的存放路径
+        outDir: 'diff-com', //指定输出路径
+        assetsDir: 'static', // 指定生成静态资源的存放路径
     },
 })
