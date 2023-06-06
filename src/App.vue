@@ -15,5 +15,5 @@
 import {ComponentInternalInstance, getCurrentInstance, ref} from 'vue'
 const activeIndex = ref('1')
 const {proxy} = (getCurrentInstance() as ComponentInternalInstance)
-// proxy.$router.push('/diff-com')
+proxy.$router.push('/diff-com')
 </script>

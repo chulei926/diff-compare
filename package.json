@@ -12,9 +12,11 @@
     "@element-plus/icons-vue": "^2.0.6",
     "@types/node": "^18.0.6",
     "axios": "^0.27.2",
+    "chardet": "^1.5.1",
     "diff2html": "^3.4.35",
     "element-plus": "^2.2.9",
     "highlight.js": "^11.8.0",
+    "jschardet": "^3.0.0",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
   },
